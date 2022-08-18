@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Stats</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+  <main class="signup__wrap">
+    <div class="signup__box">
+      <header class="signup__head">
+        <div class="logo">
+          <img src="/assets/logoSchoolStat.svg" alt="Logo" />
+        </div>
+        <h3 class="org__name">ALT School Stats</h3>
+      </header>
+      <section class="signup__content">
+        <div class="section__head">
+          <h2 class="section__title">Sign Up</h2>
+          <h4 class="sub__title">Enter your email and password below</h4>
+        </div>
+        
+        <form action="" id="form">
+          <div class="input__wrap">
+            <label class="label__name" htmlFor="text">Username</label>
+						<input 
+							class="login__input" 
+							type="text" 
+							name="username" 
+							id="getName" 
+							placeholder="Lili"
+							required
+						/>
+						<i class="far fa-check-circle" id="iconChange"></i>
+						<i class="fas fa-exclamation-circle" id="iconChange"></i>
+						<p class="error__msg"></p>
+          </div>
+
+					<div class="input__wrap">
+            <label class="label__name" htmlFor="email">Email</label>
+						<input 
+							class="login__input" 
+							type="email" 
+							name="email" 
+							id="getEmail"
+							placeholder="lili@example.com"
+							required
+						/>
+						<i class="far fa-check-circle" id="iconChange"></i>
+						<i class="fas fa-exclamation-circle" id="iconChange"></i>
+						<i class="far fa-eye-slash" id="iconChange"></i>
+						<p class="error__msg"></p>
+          </div>
+					
+          <div class="input__wrap">
+            <label class="label__name" htmlFor="password">Password</label>
+						<input 
+							class="signup__input" 
+							type="password" 
+							name="password" 
+							id="getPassword"
+							placeholder="********"
+							required
+						/>
+						<i class="far fa-check-circle" id="iconChange"></i>
+						<i class="fas fa-exclamation-circle" id="iconChange"></i>
+						<i class="far fa-eye-slash" id="iconChange"></i>
+						<p class="error__msg"></p>
+          </div>
+
+          <button 
+						type="submit" 
+						class="signup" 
+						onsubmit="signup()"
+					>
+						Sign Up
+					</button>
+        </form>
+        <p class="smallText">Already have an account?
+          <a href="/login.html" class="purple__text" id="login">Log In</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+
+
+
+  
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+    <script src="index.mjs" type="module"></script>
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+</body>
+</html>

@@ -1,19 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Stats</title>
+  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous"
+    />
+  <script src="https://kit.fontawesome.com/7923aeb42c.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <div class="main__wrapper">
+    <!-- Header -->
+    <header class="head__wrap">
+      <!-- Header content goes in here -->
+      <h2>Overview</h2>
+      <div class="header__items">
+				<div class="date"></div> 
+        <div class="time"></div>
+        <p>Welcome<span id="displayUsername">John Doe</span>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="side__bar">
+      <div class="logo">
+				<img src="assets/logoSchoolStat.svg" alt="">
+				<p>ALT School Stat</p>
+			</div>
+	  	<ul>
+	      <li><a class="active" href="/"><i class="fa-solid fa-house"></i>Home</a></li>
+				<li><a href=""><i class="fa-solid fa-user"></i>Profile</a></li>
+				<li><a href=""><i class="fa-solid fa-graduation-cap"></i>Courses</a></li>
+				<li><a href=""><i class="fa-solid fa-chalkboard-user"></i>Instructors</a></li>
+				<li><a href=""><i class="fa-solid fa-message"></i>Messages</a></li>
+				<li><a href=""><i class="fa-solid fa-chart-simple"></i>Statistics</a></li>
+				<li><a href=""><i class="fa-solid fa-bell"></i>Notifications</a></li>
+				<li><a href=""><i class="fa-solid fa-gear"></i>Settings</a></li>
+				<li><a class="log-out" href="/login.html"><i class="fa-solid fa-right-from-bracket"></i>Log out</a></li>
+			</ul>
+    </aside>
+
+    <!-- Main grid content -->
+    <section class="grid__wrap">
+
+      <!-- Total data cards -->
+      <div class="total__cards">
+       	<div class="card one">
+			    <h6 class="heading">Total Students</h6>
+					<h3 class="number">1500</h3>
+				</div>
+				<div class="card two">
+						<h6 class="heading">Total Males</h6>
+						<h3 class="number">931</h3>
+				</div>
+				<div class="card three">
+						<h6 class="heading">Total Females</h6>
+						<h3 class="number">569</h3>
+				</div>
+				<div class="card four">
+						<h6 class="heading">Total Instructors</h6>
+						<h3 class="number">10</h3>
+				</div>
+      </div>
+
+      <!-- Table for Instructors -->
+      <div class="tables__wrap">
+        <div class="flex__one">
+          <table class="instructors">
+              <thead>
+                  <tr>
+                      <td class="instructors-info">Instructors info</td> 
+                  </tr> 
+                  <tr>
+                      <td>Name of Instructor</td>
+                      <td>No of Courses</td>
+                      <td>Track</td>
+                  </tr>  
+              </thead>
+
+              <tbody>
+                  <tr>
+                      <td>Adenike Andrews</td>
+                      <td>3</td>
+                      <td>Frontend</td>
+                  </tr>
+                  <tr>
+                      <td>Allen Jacobs</td>
+                      <td>5</td>
+                      <td>Backend</td>
+                  </tr>
+                  <tr>
+                      <td>Divine Kentucky</td>
+                      <td>2</td>
+                      <td>Frontend</td>
+                  </tr>
+                  <tr>
+                      <td>Edward Miles</td>
+                      <td>3</td>
+                      <td>Backend</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>Eric Mathews</td>
+                      <td>3</td>
+                      <td>Cloud</td>
+                  </tr>
+                  <tr>
+                      <td>Hyelhirra Smith</td>
+                      <td>2</td>
+                      <td>Frontend</td>
+                  </tr>
+                  <tr>
+                      <td>Lilian Jones</td>
+                      <td>3</td>
+                      <td>Backend</td>
+                  </tr>
+                  <tr>
+                      <td>Michael Damien</td>
+                      <td>3</td>
+                      <td>Frontend</td>
+                  </tr>
+                  <tr>
+                      <td>Opeyemi Philips</td>
+                      <td>2</td>
+                      <td>Cloud</td>
+                  </tr>
+                  <tr>
+                      <td>Sarah Schwarzenegger</td>
+                      <td>3</td>
+                      <td>Cloud</td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+        
+        <div class="flex__two">
+          <!-- Table for Track and Age -->
+          <div class="table__track">
+							<table>
+								<thead class="">
+										<tr>
+												<td>Track</td>
+												<td>No of Students</td>
+												<td>Male</td>
+												<td>Female</td>
+										</tr>
+								</thead>
+								<tbody>
+									<tr>
+											<td>Frontend</td>
+											<td>600</td>
+											<td>395</td>
+											<td>205</td>
+									</tr>
+									<tr>
+											<td>Backend</td>
+											<td>503</td>
+											<td>303</td>
+											<td>200</td>
+									</tr>
+										<tr>
+												<td>Cloud</td>
+											<td>397</td>
+											<td>233</td>
+											<td>164</td>
+									</tr>
+									<tr>
+											<td>Total</td>
+											<td>1500</td>
+											<td>931</td>
+											<td>569</td>
+									</tr>
+								</tbody>
+							</table>
+          </div
+						
+					<div class="table__age"> 
+            <table class="table__age">
+							<thead>
+									<tr>
+											<td>Age of Students</td>
+											<td>Sort</td>                     
+									</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td>18-29 years</td>
+											<td>53%</td>
+									</tr>
+									<tr>
+											<td>30-44 years</td>
+											<td>38%</td>
+									</tr>
+									<tr>
+											<td>45-65 years</td>
+											<td>9%</td>
+									</tr>
+									<tr>
+											<td>Total</td>
+											<td>100%</td>
+									</tr>
+							</tbody>
+            </table>
+          </div>
+							
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer__wrap">
+      <p>&copy;Copyright 2022</p> 
+      <p>Made by Circle 169</p> 
+      <p>All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
